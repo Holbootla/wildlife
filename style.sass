@@ -1,0 +1,138 @@
+$white: #F7F7F7
+
+$grey: #666666
+
+$black: #333333
+
+$orange: #CD6326
+$orange-hover: #E39128
+$orange-pressed: #8F5613
+	
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	cursor: default
+	
+.wrapper
+	max-width: 1440px
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0 auto
+
+.top
+	width: 100%
+	padding: 0 120px
+	display: flex
+	flex-direction: column
+	background-image: url(fox-image.png)
+
+.header
+	display: flex
+	padding: 20px 0
+	justify-content: space-between
+
+	.logo-container
+		display: flex
+		column-gap: 15px
+		align-items: center
+
+		.logo-text
+			font-family: 'Roboto', sans-serif
+			font-size: 32px
+			line-height: 60px
+			text-transform: uppercase
+			color: $white
+		
+	.top-nav
+
+		.top-nav-list
+			list-style: none
+			display: flex
+			align-items: center
+			column-gap: 60px
+
+			.top-nav-list-item
+				font-family: 'Open Sans', sans-serif
+				font-style: normal
+				font-weight: normal
+				font-size: 23px
+				line-height: 60px
+				color: $white
+
+				&:hover
+					cursor: pointer
+
+			.top-nav-list-icon
+				display: block
+
+				img:hover
+					cursor: pointer
+
+			.top-nav-list-button
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 120px
+				height: 50px
+				border: 2px solid $orange
+				border-radius: 5px
+
+				&:hover
+					background-color: $orange					
+					cursor: pointer
+				
+				&:active					
+					background-color: $orange-pressed
+					border: 2px solid $orange-pressed
+					cursor: pointer
+
+
+.top-container
+
+	.top-content
+		margin: 100px 0 240px 0
+		max-width: 275px
+
+		.top-title
+			font-family: 'Open Sans', sans-serif
+			font-style: normal
+			font-weight: normal
+			font-size: 48px
+			line-height: 72px
+			letter-spacing: 2px
+			color: $orange
+			margin-bottom: 50px
+
+		.top-paragraph
+			font-family: 'Open Sans', sans-serif
+			font-style: normal
+			font-weight: normal
+			font-size: 18px
+			line-height: 27px
+			color: $white
+			margin-bottom: 50px
+
+		.top-button
+			display: flex
+			width: 160px
+			height: 60px
+			justify-content: center
+			align-items: center
+			background-color: $orange
+			border-radius: 5px
+			font-family: 'Open Sans', sans-serif
+			font-style: normal
+			font-weight: normal
+			font-size: 23px
+			line-height: 60px
+			color: $white
+
+			&:hover
+				background-color: $orange-hover
+				cursor: pointer
+
+			&:active					
+				background-color: $orange-pressed
+				cursor: pointer
