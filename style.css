@@ -18,7 +18,7 @@
   padding: 0 120px;
   display: flex;
   flex-direction: column;
-  background-image: url(fox-image.png);
+  background-image: url(assets/fox-image.png);
 }
 .top .header {
   display: flex;
@@ -293,7 +293,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(leaves.jpg);
+  background-image: url(assets/leaves.jpg);
 }
 .footer .logo-container {
   display: flex;
