@@ -5,6 +5,14 @@
   cursor: default;
 }
 
+a {
+  text-decoration: none;
+  color: currentcolor;
+}
+a:hover {
+  cursor: pointer;
+}
+
 .wrapper {
   max-width: 1440px;
   display: flex;
@@ -18,7 +26,8 @@
   padding: 0 120px;
   display: flex;
   flex-direction: column;
-  background-image: url(assets/fox-image.png);
+  background: url(assets/fox-image.png) center;
+  background-size: cover;
 }
 .top .header {
   display: flex;
@@ -51,19 +60,17 @@
   line-height: 60px;
   color: #F7F7F7;
 }
-.top .header .top-nav .top-nav-list .top-nav-list-item:hover {
-  cursor: pointer;
-}
 .top .header .top-nav .top-nav-list .top-nav-list-icon {
   display: block;
 }
 .top .header .top-nav .top-nav-list .top-nav-list-icon img:hover {
   cursor: pointer;
 }
-.top .header .top-nav .top-nav-list .top-nav-list-button {
+.top .header .top-nav .top-nav-list .top-nav-list-button button {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
   width: 120px;
   height: 50px;
   border: 2px solid #CD6326;
@@ -75,11 +82,11 @@
   line-height: 27px;
   color: #F7F7F7;
 }
-.top .header .top-nav .top-nav-list .top-nav-list-button:hover {
+.top .header .top-nav .top-nav-list .top-nav-list-button button:hover {
   background-color: #CD6326;
   cursor: pointer;
 }
-.top .header .top-nav .top-nav-list .top-nav-list-button:active {
+.top .header .top-nav .top-nav-list .top-nav-list-button button:active {
   background-color: #8F5613;
   border: 2px solid #8F5613;
   cursor: pointer;
@@ -114,6 +121,7 @@
   justify-content: center;
   align-items: center;
   background-color: #CD6326;
+  border: none;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -190,6 +198,7 @@
 .middle .slider-container .slider .slides {
   display: flex;
   column-gap: 60px;
+  overflow-x: hidden;
 }
 .middle .slider-container .slider .slides .slide {
   width: 300px;
@@ -229,6 +238,16 @@
   color: #F7F7F7;
   z-index: 2;
   cursor: pointer;
+}
+@media screen and (max-width: 1439px) {
+  .middle .slider-container .slider .slides .slide-03 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .middle .slider-container .slider .slides .slide-02 {
+    display: none;
+  }
 }
 .middle .subscribe-container {
   display: flex;
@@ -293,7 +312,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(assets/leaves.jpg);
+  background: url(assets/leaves.jpg) center;
+  background-size: cover;
 }
 .footer .logo-container {
   display: flex;
@@ -322,6 +342,12 @@
 }
 .footer .bottom-nav .bottom-nav-list .bottom-nav-list-item:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 1439px) {
+  .footer .bottom-nav .bottom-nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer .contacts .contacts-list {
   list-style: none;
